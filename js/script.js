@@ -33,3 +33,7 @@ setInterval(nextSlide, 5000);
 function redirectToMoreProducts() {
     window.location.href = '/html/catalog.html';
 }
+
+function redirectToHome() {
+    window.location.href = 'index.html';
+}

@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог товаров</title>
     <link rel="stylesheet" href="/css/catalog.css">
+    <script>
+        function redirectToHome() {
+    window.location.href = 'index.html';
+}
+
+    </script>
 </head>
 <body>
     <header>
         <h1>Добро пожаловать в наш каталог</h1>
     </header>
+    <section id="return-home" class="return-home">
+        <div class="return-home-container">
+            <button class="return-home-button" onclick="redirectToHome()">Вернуться на главную</button>
+        </div>
+    </section>
+    
 
     <section id="catalog" class="catalog">
-        <h2>Каталог товаров</h2>
         <div class="catalog-container">
             <div class="product-card">
                 <img src="https://via.placeholder.com/150" alt="Масляный фильтр">
