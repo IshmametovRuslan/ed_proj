@@ -28,3 +28,8 @@ prevBtn.addEventListener('click', prevSlide);
 
 // Автоматическое переключение слайдов (опционально)
 setInterval(nextSlide, 5000);
+
+
+function redirectToMoreProducts() {
+    window.location.href = '/html/catalog.html';
+}

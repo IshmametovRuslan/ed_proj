@@ -149,13 +149,14 @@ footer p {
 }
 
 .slide {
-    min-width: 100%;
+    
     transition: opacity 0.5s ease;
     opacity: 0;
 }
 
 .slide.active {
     opacity: 1;
+    min-width: 100%;
 }
 
 .slide img {
@@ -186,4 +187,30 @@ footer p {
 
 .slider-btn:hover {
     background-color: rgba(211, 47, 47, 0.8);
+}
+
+
+/*Стили для кнопки*/
+.load-more-button {
+    background-color: #ff4b4b; /* Красный цвет кнопки */
+    color: #ffffff; /* Белый текст */
+    font-size: 16px; /* Размер текста */
+    font-weight: bold; /* Полужирный текст */
+    border: none; /* Без границ */
+    border-radius: 5px; /* Закругленные углы */
+    padding: 10px 20px; /* Внутренние отступы */
+    cursor: pointer; /* Указатель курсора */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для кнопки */
+    transition: all 0.3s ease; /* Анимация при наведении */
+    margin: 20px;
+}
+
+.load-more-button:hover {
+    background-color: #d43d3d; /* Темнее красный при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+.load-more-button:active {
+    background-color: #b53131; /* Ещё темнее красный при нажатии */
+    transform: scale(0.95); /* Уменьшение кнопки при нажатии */
 }
